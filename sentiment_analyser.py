@@ -4,39 +4,7 @@ import joblib
 import re
 import requests
 
-# def extract_video_id(url):
-#     # Define the regular expression pattern for YouTube video ID
-#     pattern = r'(?:https?://)?(?:www\.)?youtube\.com/watch\?v=([a-zA-Z0-9_-]{11})'
-#     match = re.search(pattern, url)
-# 
-#     if match:
-#         return match.group(1)
-#     else:
-#         return ""
-# 
-# def get_comments(link):
-# 
-#     videoId = extract_video_id(link)
-#     if videoId == "":
-#         print("Error")
-#         return
-#     url = "https://youtube-v31.p.rapidapi.com/commentThreads"
-#     querystring = {"part": "snippet", "videoId": videoId, "maxResults": "100"}
-# 
-#     headers = {
-#         "x-rapidapi-key": "0891c1fa67mshb75ea0e5d4d19e5p180751jsn5d38bfedeab4",
-#         "x-rapidapi-host": "youtube-v31.p.rapidapi.com"
-#     }
-# 
-#     response = requests.get(url, headers=headers, params=querystring)
-#     responseData = response.json()
-# 
-#     comments = []
-#     for item in responseData["items"]:
-#         commentText = item["snippet"]["topLevelComment"]["snippet"]["textDisplay"]
-#         comments.append(commentText)
-# 
-#     return comments
+
 
 def predict(text):
     model = joblib.load('sentiment_analysis_svm_model.pkl')
