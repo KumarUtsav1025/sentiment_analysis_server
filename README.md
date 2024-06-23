@@ -17,9 +17,6 @@ This FastAPI application provides endpoints to fetch YouTube video metadata and 
      pip install requirements.txt
      ```
 
-markdown
-Copy code
-
 3. **Run the Application:**
 - Start the FastAPI application using Uvicorn:
   ```
