@@ -7,22 +7,19 @@ This FastAPI application provides endpoints to fetch YouTube video metadata and 
 1. **Clone the Repository:**
     ```
    git clone https://github.com/KumarUtsav1025/sentiment_analysis_server
+   cd sentiment_analysis_server
     ```
-    - cd <repository-folder>
 
 2. **Install Dependencies:**
-   - Ensure Python 3.x is installed.
-   - Install required Python packages:
      ```
      pip install requirements.txt
      ```
 
 3. **Run the Application:**
-- Start the FastAPI application using Uvicorn:
-  ```
-  uvicorn main:app --reload
-  ```
-- The API server will start at `http://127.0.0.1:8000`.
+      ```
+      uvicorn main:app --reload
+      ```
+   - The API server will start at `http://127.0.0.1:8000`.
 
 ## Endpoints
 
