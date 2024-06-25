@@ -1,4 +1,5 @@
 from typing import Union
+import uvicorn
 import sentiment_analyser as sa
 import youtube_metadata as ym
 from fastapi.middleware.cors import CORSMiddleware
@@ -60,3 +61,10 @@ def read_item(video_id: str):
             "neutral": neutral
         }
     }
+
+
+# app/main.py
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+
